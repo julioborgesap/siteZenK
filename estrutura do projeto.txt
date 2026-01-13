@@ -1,0 +1,20 @@
+estoque_empresa/
+├── index.html
+├── css/
+│   ├── estilo-principal.css
+│   ├── dashboard.css
+│   ├── produtos.css
+│   ├── estoque.css
+│   ├── gastos.css
+│   └── config.css
+├── js/
+│   ├── app.js
+│   ├── dashboard.js
+│   ├── produtos.js
+│   ├── estoque.js
+│   ├── gastos.js
+│   ├── config.js
+│   └── utils.js
+├── assets/
+│   └── (ícones, logos, etc.)
+└── README.txt

@@ -1,0 +1,303 @@
+/* Estilos específicos para a página de Produtos */
+
+/* Cabeçalho da página de produtos */
+.cabecalho-pagina-produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Filtros de produtos */
+.filtros-produtos {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.filtros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Tabela de produtos */
+.tabela-container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.tabela-produtos {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+
+.tabela-produtos thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.tabela-produtos th {
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tabela-produtos tbody tr {
+    border-bottom: 1px solid #e1e5eb;
+    transition: background-color 0.2s;
+}
+
+.tabela-produtos tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.tabela-produtos td {
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.tabela-produtos .acoes-celula {
+    display: flex;
+    gap: 10px;
+}
+
+.botao-acao {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.botao-acao.editar {
+    background-color: #e3f2fd;
+    color: #3498db;
+}
+
+.botao-acao.editar:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.botao-acao.excluir {
+    background-color: #fdeaea;
+    color: #e74c3c;
+}
+
+.botao-acao.excluir:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.botao-acao.visualizar {
+    background-color: #e8f6f3;
+    color: #1abc9c;
+}
+
+.botao-acao.visualizar:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Modal de produto */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-produto {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: modalAparecer 0.3s ease;
+}
+
+@keyframes modalAparecer {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e1e5eb;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-cabecalho h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.botao-fechar-modal {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.botao-fechar-modal:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-corpo {
+    padding: 20px;
+}
+
+.formulario-modal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.formulario-modal .grupo-completo {
+    grid-column: 1 / -1;
+}
+
+.modal-rodape {
+    padding: 20px;
+    border-top: 1px solid #e1e5eb;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+/* Estoque por cor/tamanho */
+.estoque-variacoes {
+    margin-top: 20px;
+}
+
+.variacoes-titulo {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.lista-variacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.variacao-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid #e1e5eb;
+}
+
+.variacao-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.variacao-nome {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.botao-remover-variacao {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.botao-remover-variacao:hover {
+    background-color: #ffeaea;
+}
+
+.variacao-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Responsividade para produtos */
+@media (max-width: 768px) {
+    .cabecalho-pagina-produtos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .tabela-container {
+        border-radius: 8px;
+    }
+    
+    .tabela-produtos th,
+    .tabela-produtos td {
+        padding: 12px 15px;
+    }
+    
+    .modal-produto {
+        max-height: 95vh;
+    }
+    
+    .formulario-modal {
+        grid-template-columns: 1fr;
+    }
+    
+    .variacao-item {
+        width: 100%;
+    }
+}

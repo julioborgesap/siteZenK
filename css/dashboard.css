@@ -1,0 +1,234 @@
+/* Estilos específicos para o Dashboard */
+
+/* Seção de resumo */
+.resumo-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.resumo-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.resumo-card:hover {
+    transform: translateY(-5px);
+}
+
+.resumo-icone {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+
+.resumo-icone.azul {
+    background-color: #3498db;
+}
+
+.resumo-icone.verde {
+    background-color: #27ae60;
+}
+
+.resumo-icone.laranja {
+    background-color: #f39c12;
+}
+
+.resumo-icone.vermelho {
+    background-color: #e74c3c;
+}
+
+.resumo-conteudo h3 {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.resumo-conteudo .valor {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.resumo-conteudo .variacao {
+    font-size: 12px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.variacao.positivo {
+    color: #27ae60;
+}
+
+.variacao.negativo {
+    color: #e74c3c;
+}
+
+/* Seção de gráficos */
+.graficos-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.grafico-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.grafico-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e5eb;
+}
+
+.grafico-canvas {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+/* Produtos com estoque baixo */
+.produtos-baixo-estoque {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.produtos-baixo-estoque h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e5eb;
+}
+
+.lista-baixo-estoque {
+    list-style: none;
+}
+
+.item-baixo-estoque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.2s;
+}
+
+.item-baixo-estoque:hover {
+    background-color: #f9f9f9;
+}
+
+.item-baixo-estoque:last-child {
+    border-bottom: none;
+}
+
+.info-produto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icone-produto {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.icone-produto.camisa {
+    background-color: #3498db;
+}
+
+.icone-produto.camiseta {
+    background-color: #9b59b6;
+}
+
+.icone-produto.short {
+    background-color: #1abc9c;
+}
+
+.icone-produto.regata {
+    background-color: #f39c12;
+}
+
+.detalhes-produto h4 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.detalhes-produto p {
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.quantidade-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.quantidade-produto .quantidade {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.quantidade-produto .minimo {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* Responsividade para dashboard */
+@media (max-width: 1100px) {
+    .graficos-dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .resumo-dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .graficos-dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .grafico-container {
+        padding: 15px;
+    }
+}

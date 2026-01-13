@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Estoque - Moda Masculina</title>
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/estoque.css">
+    <link rel="stylesheet" href="css/gastos.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Biblioteca Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container-principal">
+        
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <div class="logo-container">
+                <div class="logo-icone">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="logo-texto">
+                    <h1>Estoque Moda Masculina</h1>
+                    <p>Controle completo de estoque e produção</p>
+                </div>
+            </div>
+            
+            <div class="usuario-info">
+                <div class="usuario-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="usuario-detalhes">
+                    <span class="usuario-nome">Administrador</span>
+                    <span class="usuario-status">Online</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Menu lateral -->
+        <nav class="menu-lateral" id="menuLateral">
+            <ul class="menu-lista">
+                <li class="menu-item ativo" data-pagina="dashboard">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="menu-item" data-pagina="produtos">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Produtos</span>
+                </li>
+                <li class="menu-item" data-pagina="estoque">
+                    <i class="fas fa-boxes"></i>
+                    <span>Controle de Estoque</span>
+                </li>
+                <li class="menu-item" data-pagina="gastos">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Gastos de Produção</span>
+                </li>
+                <li class="menu-item" data-pagina="config">
+                    <i class="fas fa-cog"></i>
+                    <span>Configurações</span>
+                </li>
+            </ul>
+            
+            <div class="menu-rodape">
+                <button class="botao-exportar" id="botaoExportarExcel">
+                    <i class="fas fa-file-excel"></i> Exportar Excel
+                </button>
+                <button class="botao-exportar" id="botaoExportarJson">
+                    <i class="fas fa-file-code"></i> Backup JSON
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Botão para abrir/fechar menu em dispositivos móveis -->
+        <!-- CORREÇÃO: Este botão estava faltando no HTML original -->
+        <button class="botao-menu-hamburguer" id="botaoMenuHamburguer">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- Conteúdo principal -->
+        <main class="conteudo-principal" id="conteudoPrincipal">
+            <!-- Dashboard será carregado por padrão -->
+            <div class="pagina-conteudo" id="dashboard">
+                <!-- Conteúdo do dashboard será carregado via JavaScript -->
+            </div>
+            
+            <div class="pagina-conteudo oculto" id="produtos">
+                <!-- Conteúdo dos produtos será carregado via JavaScript -->
+            </div>
+            
+            <div class="pagina-conteudo oculto" id="estoque">
+                <!-- Conteúdo do controle de estoque será carregado via JavaScript -->
+            </div>
+            
+            <div class="pagina-conteudo oculto" id="gastos">
+                <!-- Conteúdo dos gastos será carregado via JavaScript -->
+            </div>
+            
+            <div class="pagina-conteudo oculto" id="config">
+                <!-- Conteúdo das configurações será carregado via JavaScript -->
+            </div>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer class="rodape">
+            <div class="rodape-info">
+                <span>Sistema de Controle de Estoque - ZenK</span>
+                <span>V1.0 ©</span>
+            </div>
+            <div class="rodape-alerta" id="rodapeAlerta">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span id="textoAlerta">Nenhum alerta no momento</span>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/estoque.js"></script>
+    <script src="js/gastos.js"></script>
+    <script src="js/config.js"></script>
+    
+    <!-- Biblioteca para exportar Excel -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    
+    <!-- Script de correções emergenciais -->
+    <!-- <script src="js/correcoes.js"></script> -->
+</body>
+</html>

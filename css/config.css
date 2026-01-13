@@ -1,0 +1,261 @@
+/* Estilos específicos para a página de Configurações */
+
+/* Seções de configurações */
+.secoes-config {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.secao-config {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.secao-config h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e5eb;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao-config h3 i {
+    color: #3498db;
+}
+
+/* Formulários de configuração */
+.formulario-config {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Categorias e produtos */
+.lista-config {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.item-config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.2s;
+}
+
+.item-config:hover {
+    background-color: #f8f9fa;
+}
+
+.item-config:last-child {
+    border-bottom: none;
+}
+
+.info-config {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icone-config {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.icone-config.categoria {
+    background-color: #9b59b6;
+}
+
+.icone-config.produto {
+    background-color: #1abc9c;
+}
+
+.icone-config.cor {
+    background-color: #e74c3c;
+}
+
+.icone-config.tamanho {
+    background-color: #f39c12;
+}
+
+.detalhes-config h4 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.detalhes-config p {
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+/* Alertas de estoque */
+.config-alertas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alerta-config {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+}
+
+.alerta-config h4 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alerta-config h4 i {
+    color: #3498db;
+}
+
+/* Controles de quantidade */
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botao-quantidade {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.botao-quantidade:hover {
+    background-color: #f8f9fa;
+}
+
+.input-quantidade {
+    width: 80px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Configurações de backup */
+.config-backup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.backup-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e1e5eb;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.backup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #3498db;
+}
+
+.backup-card i {
+    font-size: 36px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.backup-card h4 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.backup-card p {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Configurações de sistema */
+.info-sistema {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.info-item .rotulo {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.info-item .valor {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 15px;
+}
+
+/* Responsividade para configurações */
+@media (max-width: 768px) {
+    .formulario-config {
+        grid-template-columns: 1fr;
+    }
+    
+    .item-config {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .acoes-config {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .config-backup {
+        grid-template-columns: 1fr;
+    }
+}
