@@ -722,18 +722,9 @@ function finalizarVenda() {
             tamanho: item.tamanho,
             totalVenda: item.total // CORREÇÃO: Salvar o total da venda
         };
-            
-            // Registrar movimentação
+
+            // Registrar movimentação (já atualiza estoque automaticamente)
             gerenciadorDados.adicionarMovimentacao(saida);
-            
-            // Atualizar estoque detalhado
-            gerenciadorDados.atualizarEstoqueDetalhado(
-                item.produtoId,
-                item.cor,
-                item.tamanho,
-                'saida',
-                item.quantidade
-            );
             
             valorTotalVenda += item.total;
         });
