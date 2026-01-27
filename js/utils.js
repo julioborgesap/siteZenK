@@ -13,8 +13,8 @@ const dadosIniciais = {
             custo: 51.75,
             estoqueMinimo: 10,
             cores: [
-                { nome: "Branco", estoque: 15, tamanhos: { P: 5, M: 5, G: 3, GG: 2 } },
-                { nome: "Preto", estoque: 12, tamanhos: { P: 4, M: 4, G: 2, GG: 2 } }
+                { nome: "Branco", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } },
+                { nome: "Preto", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 29.00 },
@@ -37,8 +37,8 @@ const dadosIniciais = {
             custo: 57.25,
             estoqueMinimo: 10,
             cores: [
-                { nome: "Azul Marinho", estoque: 15, tamanhos: { P: 5, M: 5, G: 3, GG: 2 } },
-                { nome: "Safari", estoque: 12, tamanhos: { P: 4, M: 4, G: 2, GG: 2 } }
+                { nome: "Azul Marinho", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } },
+                { nome: "Safari", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 38.50 },
@@ -61,10 +61,10 @@ const dadosIniciais = {
             custo: 29.25,
             estoqueMinimo: 10,
             cores: [
-                { nome: "Rosa BB", estoque: 20, tamanhos: { P: 6, M: 6, G: 5, GG: 3 } },
-                { nome: "Vinho", estoque: 18, tamanhos: { P: 5, M: 5, G: 5, GG: 3 } },
-                { nome: "Verde Musgo", estoque: 20, tamanhos: { P: 6, M: 6, G: 5, GG: 3 } },
-                { nome: "Caramelo", estoque: 18, tamanhos: { P: 5, M: 5, G: 5, GG: 3 } }
+                { nome: "Rosa BB", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } },
+                { nome: "Vinho", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } },
+                { nome: "Verde Musgo", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } },
+                { nome: "Caramelo", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 11.00 },
@@ -87,10 +87,10 @@ const dadosIniciais = {
             custo: 66.50,
             estoqueMinimo: 5,
             cores: [
-                { nome: "Preto", estoque: 10, tamanhos: { "40": 3, "42": 4, "44": 2, "46": 1 } },
-                { nome: "Azul Marinho", estoque: 15, tamanhos: { "40": 5, "42": 5, "44": 3, "46": 2 } },
-                { nome: "Cru", estoque: 10, tamanhos: { "40": 3, "42": 4, "44": 2, "46": 1 } },
-                { nome: "Off White", estoque: 15, tamanhos: { "40": 5, "42": 5, "44": 3, "46": 2 } }
+                { nome: "Preto", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } },
+                { nome: "Azul Marinho", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } },
+                { nome: "Cru", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } },
+                { nome: "Off White", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 30.00 },
@@ -115,10 +115,10 @@ const dadosIniciais = {
             custo: 74.50,
             estoqueMinimo: 5,
             cores: [
-                { nome: "Verde Militar", estoque: 22, tamanhos: { "40": 7, "42": 8, "44": 5, "46": 2 } },
-                { nome: "Camurça (marrom clarin)", estoque: 18, tamanhos: { "40": 6, "42": 6, "44": 4, "46": 2 } },
-                { nome: "Branco", estoque: 22, tamanhos: { "40": 7, "42": 8, "44": 5, "46": 2 } },
-                { nome: "Preto", estoque: 18, tamanhos: { "40": 6, "42": 6, "44": 4, "46": 2 } }
+                { nome: "Verde Militar", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } },
+                { nome: "Camurça (marrom clarin)", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } },
+                { nome: "Branco", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } },
+                { nome: "Preto", estoque: 0, tamanhos: { "40": 0, "42": 0, "44": 0, "46": 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 40.00 },
@@ -142,7 +142,7 @@ const dadosIniciais = {
             custo: 40.10,
             estoqueMinimo: 7,
             cores: [
-                { nome: "Branco", estoque: 12, tamanhos: { P: 3, M: 4, G: 3, GG: 2 } }
+                { nome: "Branco", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 12.10 },
@@ -165,7 +165,7 @@ const dadosIniciais = {
             custo: 16.00,
             estoqueMinimo: 4,
             cores: [
-                { nome: "Branco", estoque: 25, tamanhos: { P: 2, M: 1, G: 5, GG: 4 } }
+                { nome: "Branco", estoque: 0, tamanhos: { P: 0, M: 0, G: 0, GG: 0 } }
             ],
             componentesCusto: [
                 { nome: "Tecido", custo: 5.50 },
