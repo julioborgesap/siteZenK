@@ -9,272 +9,208 @@ const dadosIniciais = {
             nome: "Camiseta Peruana",
             categoria: "Camisetas",
             subcategoria: "Gola Polo V",
-            preco: 49.90,
-            custo: 25.55,
+            preco: 97.80,
+            custo: 51.75,
             estoqueMinimo: 10,
             cores: [
-                { nome: "Preto", estoque: 15, tamanhos: { P: 5, M: 5, G: 3, GG: 2 } },
-                { nome: "Branco", estoque: 12, tamanhos: { P: 4, M: 4, G: 2, GG: 2 } },
-                { nome: "Cinza", estoque: 8, tamanhos: { P: 3, M: 3, G: 1, GG: 1 } }
+                { nome: "Branco", estoque: 15, tamanhos: { P: 5, M: 5, G: 3, GG: 2 } },
+                { nome: "Preto", estoque: 12, tamanhos: { P: 4, M: 4, G: 2, GG: 2 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 12.83 },
-                { nome: "Bordado", custo: 5.00 },
-                { nome: "Gola V + Punho", custo: 3.50 },
-                { nome: "Botão", custo: 0.50 },
-                { nome: "Etiqueta (silk)", custo: 1.00 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Linha", custo: 0.50 },
-                { nome: "Costureira", custo: 1.50 },
-                { nome: "Papel seda + adesivo", custo: 0.70 }
+                { nome: "Tecido", custo: 29.00 },
+                { nome: "Bordado", custo: 4.00 },
+                { nome: "Gola V + Punho", custo: 8.50 },
+                { nome: "Etiqueta (silk TAMANHO)", custo: 1.25 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Costureira", custo: 3.50 },
+                { nome: "Papel seda + cera", custo: 0.00 }
             ]
         },
         {
             id: 2,
-            sku: "CMT-ALG-0331",
-            nome: "Camiseta 100% Algodão",
+            sku: "CMT-PER-ML",
+            nome: "Camiseta Peruana",
             categoria: "Camisetas",
-            subcategoria: "Malha 100% Algodão",
-            preco: 59.90,
-            custo: 28.00,
+            subcategoria: "Manga Longa",
+            preco: 94.90,
+            custo: 57.25,
             estoqueMinimo: 10,
             cores: [
-                { nome: "Azul", estoque: 20, tamanhos: { P: 6, M: 6, G: 5, GG: 3 } },
-                { nome: "Vermelho", estoque: 18, tamanhos: { P: 5, M: 5, G: 5, GG: 3 } }
+                { nome: "Azul Marinho", estoque: 15, tamanhos: { P: 5, M: 5, G: 3, GG: 2 } },
+                { nome: "Safari", estoque: 12, tamanhos: { P: 4, M: 4, G: 2, GG: 2 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 14.00 },
-                { nome: "Bordado", custo: 5.00 },
-                { nome: "Ribana (gola normal)", custo: 4.00 },
-                { nome: "Etiqueta (silk)", custo: 1.00 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Linha", custo: 0.50 },
-                { nome: "Costureira", custo: 1.50 },
-                { nome: "Papel de seda + adesivo", custo: 1.20 }
+                { nome: "Tecido", custo: 38.50 },
+                { nome: "Bordado", custo: 4.00 },
+                { nome: "Ribana (gola normal)", custo: 4.50 },
+                { nome: "Etiqueta (silk TAMANHO)", custo: 1.25 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Costureira", custo: 3.50 },
+                { nome: "Papel seda + cera", custo: 0.00 }
             ]
         },
         {
             id: 3,
-            sku: "SHT-ALF-001",
-            nome: "Short Alfaiataria",
-            categoria: "Shorts",
-            subcategoria: "Alfaiataria",
-            preco: 89.90,
-            custo: 42.00,
-            estoqueMinimo: 8,
+            sku: "CMT-ALG-BAS",
+            nome: "Camiseta 100% Algodão",
+            categoria: "Camisetas",
+            subcategoria: "100% Algodão",
+            preco: 59.90,
+            custo: 29.25,
+            estoqueMinimo: 10,
             cores: [
-                { nome: "Bege", estoque: 10, tamanhos: { "40": 3, "42": 4, "44": 2, "46": 1 } },
-                { nome: "Azul Marinho", estoque: 15, tamanhos: { "40": 5, "42": 5, "44": 3, "46": 2 } }
+                { nome: "Rosa BB", estoque: 20, tamanhos: { P: 6, M: 6, G: 5, GG: 3 } },
+                { nome: "Vinho", estoque: 18, tamanhos: { P: 5, M: 5, G: 5, GG: 3 } },
+                { nome: "Verde Musgo", estoque: 20, tamanhos: { P: 6, M: 6, G: 5, GG: 3 } },
+                { nome: "Caramelo", estoque: 18, tamanhos: { P: 5, M: 5, G: 5, GG: 3 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 20.00 },
-                { nome: "Botão", custo: 1.50 },
-                { nome: "Zíper", custo: 3.00 },
-                { nome: "Linha", custo: 0.80 },
-                { nome: "Etiqueta ZK (couro)", custo: 2.50 },
-                { nome: "Etiqueta (tamanho)", custo: 0.80 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Papel de seda + adesivo", custo: 1.20 },
-                { nome: "Costureira", custo: 11.40 }
+                { nome: "Tecido", custo: 11.00 },
+                { nome: "Bordado", custo: 4.00 },
+                { nome: "Ribana (gola normal)", custo: 4.00 },
+                { nome: "Etiqueta (silk TAMANHO)", custo: 1.25 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Costureira", custo: 3.50 },
+                { nome: "Papel de seda + adesivo", custo: 0.00 }
             ]
         },
         {
             id: 4,
-            sku: "SHT-CNF-001",
-            nome: "Short Confort",
+            sku: "SHT-ALF-ZIP",
+            nome: "Short Alfaiataria",
             categoria: "Shorts",
-            subcategoria: "Confort",
-            preco: 79.90,
-            custo: 35.00,
-            estoqueMinimo: 8,
+            subcategoria: "Alfaiataria",
+            preco: 137.70,
+            custo: 66.50,
+            estoqueMinimo: 5,
             cores: [
-                { nome: "Preto", estoque: 22, tamanhos: { "40": 7, "42": 8, "44": 5, "46": 2 } },
-                { nome: "Verde Musgo", estoque: 18, tamanhos: { "40": 6, "42": 6, "44": 4, "46": 2 } }
+                { nome: "Preto", estoque: 10, tamanhos: { "40": 3, "42": 4, "44": 2, "46": 1 } },
+                { nome: "Azul Marinho", estoque: 15, tamanhos: { "40": 5, "42": 5, "44": 3, "46": 2 } },
+                { nome: "Cru", estoque: 10, tamanhos: { "40": 3, "42": 4, "44": 2, "46": 1 } },
+                { nome: "Off White", estoque: 15, tamanhos: { "40": 5, "42": 5, "44": 3, "46": 2 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 18.00 },
-                { nome: "Elástico", custo: 2.00 },
-                { nome: "Linha", custo: 0.80 },
-                { nome: "Etiqueta ZK (couro)", custo: 2.50 },
-                { nome: "Etiqueta (tamanho)", custo: 0.80 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Papel de seda + adesivo", custo: 1.20 },
-                { nome: "Costureira", custo: 8.90 }
+                { nome: "Tecido", custo: 30.00 },
+                { nome: "Botão", custo: 1.50 },
+                { nome: "Zíper", custo: 2.50 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Etiqueta (tamanho)", custo: 1.50 },
+                { nome: "Etiqueta ZK (couro)", custo: 1.00 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },
+                { nome: "Costureira", custo: 20.00 },
+                { nome: "Papel de seda + cera", custo: 0.00 },
+                { nome: "Frete (depende do peso)", custo: 4.50 }
             ]
         },
         {
             id: 5,
-            sku: "CMS-LIN-001",
-            nome: "Camisa de Linho",
-            categoria: "Camisas",
-            subcategoria: "Linho",
-            preco: 129.90,
-            custo: 65.00,
-            estoqueMinimo: 6,
+            sku: "SHT-CNF-LIN",
+            nome: "Short Confort Linho",
+            categoria: "Shorts",
+            subcategoria: "Confort",
+            preco: 147.90,
+            custo: 74.50,
+            estoqueMinimo: 5,
             cores: [
-                { nome: "Branco", estoque: 8, tamanhos: { P: 2, M: 3, G: 2, GG: 1 } },
-                { nome: "Azul Claro", estoque: 10, tamanhos: { P: 3, M: 3, G: 3, GG: 1 } }
+                { nome: "Verde Militar", estoque: 22, tamanhos: { "40": 7, "42": 8, "44": 5, "46": 2 } },
+                { nome: "Camurça (marrom clarin)", estoque: 18, tamanhos: { "40": 6, "42": 6, "44": 4, "46": 2 } },
+                { nome: "Branco", estoque: 22, tamanhos: { "40": 7, "42": 8, "44": 5, "46": 2 } },
+                { nome: "Preto", estoque: 18, tamanhos: { "40": 6, "42": 6, "44": 4, "46": 2 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 35.00 },
-                { nome: "Botão", custo: 2.50 },
-                { nome: "Linha", custo: 1.20 },
-                { nome: "Etiqueta ZK (couro)", custo: 2.50 },
-                { nome: "Etiqueta (tamanho)", custo: 0.80 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Papel de seda + adesivo", custo: 1.20 },
-                { nome: "Costureira", custo: 21.00 }
+                { nome: "Tecido", custo: 40.00 },
+                { nome: "Elástico", custo: 2.00 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Etiqueta (tamanho)", custo: 1.50 },
+                { nome: "Etiqueta ZK (couro)", custo: 1.00 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },
+                { nome: "Costureira", custo: 20.00 },
+                { nome: "Papel de seda + cera", custo: 0.00 },
+                { nome: "Frete (depende do peso)", custo: 4.50 }
             ]
         },
         {
             id: 6,
-            sku: "CMS-CAN-001",
-            nome: "Camisa Canelada",
+            sku: "CMS-CAN-PV",
+            nome: "Camisa Canelada PV",
             categoria: "Camisas",
-            subcategoria: "Canelada",
-            preco: 119.90,
-            custo: 58.00,
-            estoqueMinimo: 6,
+            subcategoria: "Canelada PV",
+            preco: 94.49,
+            custo: 40.10,
+            estoqueMinimo: 7,
             cores: [
-                { nome: "Rosa", estoque: 12, tamanhos: { P: 3, M: 4, G: 3, GG: 2 } },
-                { nome: "Verde", estoque: 9, tamanhos: { P: 2, M: 3, G: 2, GG: 2 } }
+                { nome: "Branco", estoque: 12, tamanhos: { P: 3, M: 4, G: 3, GG: 2 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 32.00 },
-                { nome: "Botão", custo: 2.50 },
-                { nome: "Linha", custo: 1.20 },
-                { nome: "Etiqueta ZK (couro)", custo: 2.50 },
-                { nome: "Etiqueta (tamanho)", custo: 0.80 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Papel de seda + adesivo", custo: 1.20 },
-                { nome: "Costureira", custo: 17.00 }
+                { nome: "Tecido", custo: 12.10 },
+                { nome: "Botão", custo: 3.50 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Etiqueta (tamanho)", custo: 1.50 },
+                { nome: "Etiqueta ZK (couro)", custo: 1.00 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },  
+                { nome: "Costureira", custo: 16.50 },
+                { nome: "Papel de seda + cera", custo: 0.00 },
             ]
         },
         {
             id: 7,
-            sku: "RGT-001",
-            nome: "Regata",
+            sku: "RGT-CAN-PA",
+            nome: "Regata Canelada PA",
             categoria: "Regatas",
-            subcategoria: "Básica",
-            preco: 39.90,
-            custo: 18.00,
-            estoqueMinimo: 15,
+            subcategoria: "Canelada PA",
+            preco: 64.80,
+            custo: 16.00,
+            estoqueMinimo: 4,
             cores: [
-                { nome: "Preto", estoque: 25, tamanhos: { P: 7, M: 8, G: 6, GG: 4 } },
-                { nome: "Cinza", estoque: 20, tamanhos: { P: 6, M: 6, G: 5, GG: 3 } }
+                { nome: "Branco", estoque: 25, tamanhos: { P: 2, M: 1, G: 5, GG: 4 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 9.00 },
-                { nome: "Bordado", custo: 3.00 },
-                { nome: "Linha", custo: 0.50 },
-                { nome: "Etiqueta (tamanho)", custo: 0.80 },
-                { nome: "Etiqueta (papel)", custo: 0.80 },
-                { nome: "Papel de seda + adesivo", custo: 0.90 },
-                { nome: "Costureira", custo: 3.00 }
+                { nome: "Tecido", custo: 5.50 },
+                { nome: "Linha", custo: 1.00 },
+                { nome: "Etiqueta (tamanho)", custo: 1.50 },
+                { nome: "Etiqueta ZK (couro)", custo: 1.00 },
+                { nome: "Etiqueta (papel couchê 300g)", custo: 4.50 },
+                { nome: "Costureira", custo: 3.50 },
+                { nome: "Papel de seda + cera", custo: 0.00 }
             ]
         }
     ],
 
     movimentacoes: [
-        {
-            id: 1,
-            produtoId: 1,
-            tipo: "entrada",
-            quantidade: 50,
-            data: "2023-10-15",
-            motivo: "Compra de fornecedor",
-            custoUnitario: 25.50,
-            observacao: "Fornecedor Têxtil Brasil"
-        },
-        {
-            id: 2,
-            produtoId: 1,
-            tipo: "saida",
-            quantidade: 5,
-            data: "2023-10-20",
-            motivo: "venda",
-            numeroPedido: "PED-2023-00123",
-            observacao: "Cliente João Silva"
-        },
-        {
-            id: 3,
-            produtoId: 2,
-            tipo: "entrada",
-            quantidade: 40,
-            data: "2023-10-18",
-            motivo: "Compra de fornecedor",
-            custoUnitario: 28.00,
-            observacao: "Fornecedor Algodão Premium"
-        },
-        {
-            id: 4,
-            produtoId: 3,
-            tipo: "entrada",
-            quantidade: 25,
-            data: "2023-10-22",
-            motivo: "Compra de fornecedor",
-            custoUnitario: 42.00,
-            observacao: "Fornecedor Alfaiataria & Cia"
-        }
+
     ],
 
     gastos: [
-        {
-            id: 1,
-            categoria: "Tecido",
-            produto: "Camiseta Peruana",
-            data: "2023-10-10",
-            valor: 1200.00,
-            quantidade: 100,
-            unidade: "metros",
-            fornecedor: "Têxtil Brasil"
-        },
-        {
-            id: 2,
-            categoria: "Botão",
-            produto: "Short Alfaiataria",
-            data: "2023-10-12",
-            valor: 150.00,
-            quantidade: 1000,
-            unidade: "unidades",
-            fornecedor: "Componentes Moda"
-        },
-        {
-            id: 3,
-            categoria: "Costureira",
-            produto: "Camisa de Linho",
-            data: "2023-10-15",
-            valor: 840.00,
-            quantidade: 40,
-            unidade: "horas",
-            fornecedor: "Costureiras Associadas"
-        }
+        
     ],
 
     configuracoes: {
         alertaEstoqueBaixo: true,
-        quantidadeMinimaPadrao: 10,
+        quantidadeMinimaPadrao: 5,
         // ATUALIZAR: Cores agora são objetos com nome e hex
         coresPadrao: [
             { nome: "Preto", hex: "#000000" },
             { nome: "Branco", hex: "#ffffff" },
-            { nome: "Cinza", hex: "#808080" },
-            { nome: "Azul", hex: "#3498db" },
-            { nome: "Vermelho", hex: "#e74c3c" },
-            { nome: "Verde", hex: "#27ae60" },
-            { nome: "Bege", hex: "#f5deb3" },
-            { nome: "Rosa", hex: "#ff69b4" }
+            { nome: "Azul Marinho", hex: "#0000b6" },
+            { nome: "Safari", hex: "#d8c7a9" },
+            { nome: "Cru", hex: "#C2B280" },
+            { nome: "Off White", hex: "#F5F5F5" },
+            { nome: "Verde Militar", hex: "#78866B" },
+            { nome: "Camurça (marrom clarin)", hex: "#B7A690" }
         ],
         tamanhosCamisas: ["P", "M", "G", "GG"],
         tamanhosShorts: ["38", "40", "42", "44", "46", "48"],
         categorias: ["Camisetas", "Camisas", "Shorts", "Regatas"],
-        subcategorias: ["Gola Polo V", "Manga Longa", "Alfaiataria", "Confort", "Linho", "Canelada", "Básica"],
-        motivosSaida: ["venda", "perda", "amostra", "troca", "devolução", "teste"]
+        subcategorias: ["Gola Polo V", "Manga Longa", "100% Algodão", "Alfaiataria", "Confort", "Linho", "Canelada PV", "Canelada PA"],
+        motivosSaida: ["Venda", "Perda (rasgado/manchado)", "Presente", "Troca", "Devolução", "Teste"]
     },
 
     proximoIdProduto: 8,
-    proximoIdMovimentacao: 5,
-    proximoIdGasto: 4
+    proximoIdMovimentacao: 1,
+    proximoIdGasto: 1
 };
 
 // Classe utilitária para gerenciamento de dados no LocalStorage
@@ -1249,21 +1185,12 @@ function obterCorHex(nomeCor) {
     const cores = {
         'Preto': '#000000',
         'Branco': '#ffffff',
-        'Cinza': '#808080',
-        'Azul': '#3498db',
-        'Vermelho': '#e74c3c',
-        'Verde': '#27ae60',
-        'Bege': '#f5deb3',
-        'Rosa': '#ff69b4',
-        'Azul Marinho': '#2c3e50',
-        'Verde Musgo': '#556b2f',
-        'Azul Claro': '#87ceeb',
-        'Vermelho Vinho': '#722f37',
-        'Marrom': '#8b4513',
-        'Amarelo': '#f1c40f',
-        'Laranja': '#e67e22',
-        'Roxo': '#9b59b6',
-        'Turquesa': '#1abc9c'
+        'Azul Marinho': '#0000b6',
+        'Safari': '#d8c7a9',
+        'Cru': '#C2B280',
+        'Off White': '#F5F5F5',
+        'Verde Militar': '#78866B',
+        'Camurça (marrom clarin)': '#B7A690'
     };
 
     // Se for objeto com propriedade hex, usar ela

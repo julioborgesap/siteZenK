@@ -916,7 +916,7 @@ function salvarConfiguracoes() {
     }
     
     if (inputQuantidade) {
-        configuracoes.quantidadeMinimaPadrao = parseInt(inputQuantidade.value) || 10;
+        configuracoes.quantidadeMinimaPadrao = parseInt(inputQuantidade.value) || 5;
     }
     
     // Atualizar estoque mínimo dos produtos

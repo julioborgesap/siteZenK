@@ -674,10 +674,6 @@ function finalizarVenda() {
     
     // Verificar motivo da saída
     const motivoSelecionado = document.querySelector('input[name="motivoSaida"]:checked');
-    if (!motivoSelecionado || motivoSelecionado.value !== 'venda') {
-        mostrarNotificacao('Para finalizar uma venda, selecione "venda" como motivo.', 'aviso');
-        return;
-    }
     
     // Verificar estoque novamente antes de finalizar
     let estoqueSuficiente = true;
@@ -1205,7 +1201,7 @@ function carregarResumoMovimentacoes() {
             <p>Estoque atual</p>
         </div>
         
-        <div class="resumo-mov-card ${saldoValor >= 0 ? 'entrada' : 'saida'}">
+        <div class="resumo-mov-card ${saldoValor >= 0 ? 'saida' : 'prejuizo'}">
             <h4>Lucro/Prejuízo</h4>
             <div class="valor">${formatarMoeda(saldoValor)}</div>
             <p>Vendas - Custos</p>

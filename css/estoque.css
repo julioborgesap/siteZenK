@@ -74,7 +74,7 @@
 
 /* Indicadores de tipo de movimentação */
 .tipo-entrada {
-    color: #27ae60;
+    color: #164bbb;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@
 }
 
 .tipo-saida {
-    color: #e74c3c;
+    color: #27ae60;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -176,16 +176,21 @@
 }
 
 .resumo-mov-card.entrada .valor {
-    color: #27ae60;
+    color: #164bbb; /* #27ae60 */
 }
 
 .resumo-mov-card.saida .valor {
-    color: #e74c3c;
+    color: #27ae60; /* #e74c3c */
 }
 
 .resumo-mov-card.saldo .valor {
     color: #3498db;
 }
+
+.resumo-mov-card.prejuizo .valor {
+    color: #e74c3c;
+}
+
 
 /* Modal para motivo de saída */
 .motivo-saida-container {
