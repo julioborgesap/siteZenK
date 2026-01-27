@@ -5,12 +5,12 @@ const dadosIniciais = {
     produtos: [
         {
             id: 1,
-            sku: "CMT-PER-001",
+            sku: "CMT-PER-GPV",
             nome: "Camiseta Peruana",
             categoria: "Camisetas",
-            subcategoria: "Malha Peruana",
+            subcategoria: "Gola Polo V",
             preco: 49.90,
-            custo: 25.50,
+            custo: 25.55,
             estoqueMinimo: 10,
             cores: [
                 { nome: "Preto", estoque: 15, tamanhos: { P: 5, M: 5, G: 3, GG: 2 } },
@@ -18,7 +18,7 @@ const dadosIniciais = {
                 { nome: "Cinza", estoque: 8, tamanhos: { P: 3, M: 3, G: 1, GG: 1 } }
             ],
             componentesCusto: [
-                { nome: "Tecido", custo: 12.00 },
+                { nome: "Tecido", custo: 12.83 },
                 { nome: "Bordado", custo: 5.00 },
                 { nome: "Gola V + Punho", custo: 3.50 },
                 { nome: "Botão", custo: 0.50 },
@@ -31,7 +31,7 @@ const dadosIniciais = {
         },
         {
             id: 2,
-            sku: "CMT-ALG-001",
+            sku: "CMT-ALG-0331",
             nome: "Camiseta 100% Algodão",
             categoria: "Camisetas",
             subcategoria: "Malha 100% Algodão",
@@ -266,9 +266,9 @@ const dadosIniciais = {
             { nome: "Rosa", hex: "#ff69b4" }
         ],
         tamanhosCamisas: ["P", "M", "G", "GG"],
-        tamanhosShorts: ["40", "42", "44", "46", "48"],
-        categorias: ["Camisetas", "Shorts", "Camisas", "Regatas"],
-        subcategorias: ["Malha Peruana", "Malha 100% Algodão", "Alfaiataria", "Confort", "Linho", "Canelada", "Básica"],
+        tamanhosShorts: ["38", "40", "42", "44", "46", "48"],
+        categorias: ["Camisetas", "Camisas", "Shorts", "Regatas"],
+        subcategorias: ["Gola Polo V", "Manga Longa", "Alfaiataria", "Confort", "Linho", "Canelada", "Básica"],
         motivosSaida: ["venda", "perda", "amostra", "troca", "devolução", "teste"]
     },
 
